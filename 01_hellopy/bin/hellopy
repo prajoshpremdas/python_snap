@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+from hellopy import hellopy
+
+hellopy.run_hello()
+

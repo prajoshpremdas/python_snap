@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+from online import online
+
+online.run_online()
+

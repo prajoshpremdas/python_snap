@@ -1,0 +1,31 @@
+name: online
+version: 0.0.1
+summary: Check if you are online
+description: |
+  some
+  text
+base: core18
+confinement: devmode
+
+parts:
+  online:
+    plugin: python
+    python-version: python3
+    source: .
+    stage-packages:
+      - libbz2-1.0
+      - libc6
+      - libdb5.3
+      - liblzma5
+      - libncursesw5
+      - libtinfo5
+      - zlib1g
+      - libgpg-error0
+      - liblz4-1
+      - libsystemd0
+
+apps:
+  online:
+    command: bin/online
+    plugs: [network, network-bind]
+

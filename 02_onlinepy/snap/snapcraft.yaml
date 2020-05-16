@@ -5,7 +5,7 @@ description: |
   some
   text
 base: core18
-confinement: devmode
+confinement: strict
 
 parts:
   online:
